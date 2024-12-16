@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding:0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #0073e6;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+  margin: 10;
+  }
+
+nav {
+  background: #005bb5;
+  padding: 0.5rem 0;
+  text-align: center;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 1rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.feature h3 {
+  margin: 0 0 0.5rem;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .feature {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .feature img {
+      margin-bottom: 1rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
